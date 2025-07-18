@@ -1,0 +1,8 @@
+ansible-navigator:
+  execution-environment:
+    container-engine: podman
+    container-options: '--user=0'
+    image: registry.cloudmonkeys.org/erik/ansible-ee:latest
+    pull:
+      policy: always
+  mode: stdout
