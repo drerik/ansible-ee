@@ -1,2 +1,6 @@
 collections:
-- ansible.utils
+- name: ansible.utils
+- name: community.general
+- name: community.sops
+- name: https://github.com/drerik/ansible-collection-openstack.git
+  type: git

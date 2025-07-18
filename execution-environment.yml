@@ -4,6 +4,13 @@ images:
   base_image:
     name: registry.fedoraproject.org/fedora:42
 
+additional_build_steps:
+  prepend_galaxy:
+    # Install git before ansible galaxy packages to support git repositories
+    - RUN $PKGMGR install git-core -y; if [ -z $PKGMGR_PRESERVE_CACHE ]; then $PKGMGR clean all; fi
+  append_final:
+    # Ensure that SOPS is installed in the EE, assuming the EE is for ansible-core 2.11 or newer
+    - RUN ansible-playbook -v community.sops.install_localhost
 dependencies:
   python_interpreter:
     package_system: python3
