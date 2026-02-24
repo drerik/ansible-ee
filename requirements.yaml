@@ -2,5 +2,8 @@ collections:
 - name: ansible.utils
 - name: community.general
 - name: community.sops
+- name: community.crypto
+- name: kubernetes.core
+- name: openstack.cloud
 - name: https://github.com/drerik/ansible-collection-openstack.git
   type: git
