@@ -5,5 +5,6 @@ collections:
 - name: community.crypto
 - name: kubernetes.core
 - name: openstack.cloud
+- name: community.ansible_netbird
 - name: https://github.com/drerik/ansible-collection-openstack.git
   type: git
