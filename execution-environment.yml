@@ -20,4 +20,4 @@ dependencies:
     package_pip: ansible-runner
   system: bindep.txt
   python: requirements.txt
-  galaxy: requirements.yaml
+  galaxy: requirements.yml
