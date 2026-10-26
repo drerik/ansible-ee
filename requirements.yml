@@ -1,0 +1,11 @@
+collections:
+  - name: ansible.utils
+  - name: community.general
+  - name: community.sops
+  - name: community.crypto
+  - name: kubernetes.core
+  - name: openstack.cloud
+  - name: hetzner.hcloud
+  - name: https://github.com/drerik/ansible-collection-openstack.git
+    type: git
+  - name: https://github.com/netbirdio/ansible-netbird/releases/download/v1.4.1/community-ansible_netbird-1.4.1.tar.gz
